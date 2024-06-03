@@ -1,5 +1,6 @@
 	
 Train
+--
 |    Label            |   Count |
 |:--------------------|--------:|
 | reject              |    1259 |
@@ -23,4 +24,7 @@ Train
 | CIR_USE             |      22 |
 | TRANSPORT_WEP       |      19 |
 | CIR_PURPOSE         |       7 |
-|Sum                  | 3487    |
+|Total                | 3487    |
+--
+Eval
+--

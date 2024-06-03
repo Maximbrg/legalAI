@@ -1,5 +1,6 @@
-	Label
-|                     |   Label |
+	
+Train
+|    Label            |   Count |
 |:--------------------|--------:|
 | reject              |    1259 |
 | GENERAL_CIRCUM      |     540 |
@@ -22,3 +23,4 @@
 | CIR_USE             |      22 |
 | TRANSPORT_WEP       |      19 |
 | CIR_PURPOSE         |       7 |
+|Sum                  | 3487    |

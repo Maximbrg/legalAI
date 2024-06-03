@@ -1,0 +1,36 @@
+data_path: "data/sentence_classfication/senetnce_tag.csv"
+result_path: 'results'
+
+save_dir: 'results/models/sentence_classification/trials'
+experiment_name: 'test_din'
+
+labels:            # What classifiers would we like to train
+  # - CIR_AMMU_AMOUNT_WEP
+  # - CIR_BUYER_ID_WEP
+  # - CIR_HELD_WAY_WEP
+  # - CIR_MONEY_PAID_WEP
+  # - CIR_OBTAIN_WAY'
+  - CIR_PLANNING
+  - CIR_PURPOSE
+  - CIR_STATUS_WEP
+  - CIR_TYPE_WEP
+  - CIR_USE
+  - CONFESSION
+  - POSSESSION_WEP
+
+models_to_train:
+  - setfit: true
+
+
+model_name_initial: test 
+all_class: true
+
+#model param
+num_samples_list: [50,20,50,50,10]
+#[50,20,50,50,10] #How many samples would we like to take from each classifier respectively, the length of the list is required to be the same as labels_,
+batch_size: 16
+num_iteration: 5
+pretrained_model : "amberoad/bert-multilingual-passage-reranking-msmarco"
+
+pretrained_model_list:
+      - HeNLP/HeRo

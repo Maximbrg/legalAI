@@ -1,6 +1,5 @@
-# Criminal Case Classification Project
 
-T## Criminal Case Classification Project
+# Criminal Case Classification Project
 
 This repository houses a project focused on classifying key aspects of criminal cases within the Israeli legal framework. The project leverages a few-shot learning approach for accurate sentence classification relevant to sentencing decisions.
 

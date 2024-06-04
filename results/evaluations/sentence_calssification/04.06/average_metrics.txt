@@ -1,0 +1,113 @@
+Average Metrics per Column:
+Label: REJECT
+Precision: 0.962
+Recall: 0.592
+F1 Score: 0.733
+AUC-PR: 0.886
+Cases count: 25
+Sentence count: 1589
+-----------------------
+Label: CONFESSION_LVL2
+Precision: 0.949
+Recall: 0.847
+F1 Score: 0.895
+AUC-PR: 0.967
+Cases count: 25
+Sentence count: 176
+-----------------------
+Label: CIR_TYPE_WEP
+Precision: 0.889
+Recall: 0.801
+F1 Score: 0.843
+AUC-PR: 0.917
+Cases count: 25
+Sentence count: 371
+-----------------------
+Label: CIR_HELD_WAY_WEP
+Precision: 0.556
+Recall: 0.78
+F1 Score: 0.649
+AUC-PR: 0.662
+Cases count: 25
+Sentence count: 177
+-----------------------
+Label: CIR_AMMU_AMOUNT_WEP
+Precision: 0.0
+Recall: 0.0
+F1 Score: 0.0
+AUC-PR: 0.058
+Cases count: 25
+Sentence count: 144
+-----------------------
+Label: CIR_PURPOSE
+Precision: 0.612
+Recall: 0.461
+F1 Score: 0.526
+AUC-PR: 0.466
+Cases count: 25
+Sentence count: 89
+-----------------------
+Label: GENERAL_CIRCUM
+Precision: 0.542
+Recall: 0.898
+F1 Score: 0.676
+AUC-PR: 0.779
+Cases count: 25
+Sentence count: 343
+-----------------------
+Label: CIR_STATUS_WEP
+Precision: 0.299
+Recall: 0.858
+F1 Score: 0.444
+AUC-PR: 0.447
+Cases count: 25
+Sentence count: 127
+-----------------------
+Label: REGRET
+Precision: 0.861
+Recall: 0.907
+F1 Score: 0.883
+AUC-PR: 0.909
+Cases count: 25
+Sentence count: 75
+-----------------------
+Label: PUNISHMENT
+Precision: 0.327
+Recall: 0.918
+F1 Score: 0.482
+AUC-PR: 0.565
+Cases count: 25
+Sentence count: 73
+-----------------------
+Label: CIR_PLANNING
+Precision: 0.917
+Recall: 0.647
+F1 Score: 0.759
+AUC-PR: 0.757
+Cases count: 25
+Sentence count: 34
+-----------------------
+Label: RESPO
+Precision: 0.92
+Recall: 1.0
+F1 Score: 0.959
+AUC-PR: 0.963
+Cases count: 25
+Sentence count: 104
+-----------------------
+Label: CIR_OBTAIN_WAY_WEP
+Precision: 0.038
+Recall: 0.75
+F1 Score: 0.073
+AUC-PR: 0.461
+Cases count: 25
+Sentence count: 40
+-----------------------
+Label: CIR_USE
+Precision: 0.372
+Recall: 0.831
+F1 Score: 0.514
+AUC-PR: 0.425
+Cases count: 25
+Sentence count: 177
+-----------------------

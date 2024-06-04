@@ -1,12 +1,30 @@
 # Criminal Case Classification Project
 
-This repository contains a project focused on the classification of key aspects of criminal cases according to Israeli law. Key features include:
+T## Criminal Case Classification Project
 
-- **Code**: A few-shot learning approach to accurately classify sentences relevant to sentencing decisions.
-- **Data**: Created with the help of criminal law experts from the Ministry of Justice in Israel, covering all critical aspects of a criminal case.
-- **Evaluation**: Includes an evaluation of the methodology applied to classifying sentences from weapon-related cases.
+This repository houses a project focused on classifying key aspects of criminal cases within the Israeli legal framework. The project leverages a few-shot learning approach for accurate sentence classification relevant to sentencing decisions.
 
-## Execution
---
-You have two use cases for execution the code which exsitis in `code/flows`:
-- **
+### Key Features
+
+* **Code:** Implements a few-shot learning approach for accurate sentence classification.
+* **Data:** Created in collaboration with Israeli Ministry of Justice criminal law experts, covering crucial aspects of criminal cases.
+* **Evaluation:** Includes an evaluation of the applied methodology for classifying sentences in weapon-related cases.
+
+### Execution
+
+The project offers two primary functionalities through scripts located within the `code/flows` directory:
+
+1. **Train Classifiers:** Train new classifiers using the script `code/flows/train_sentence.py`. The default configuration file is provided at `code/configs/train_sentence_cls.yaml`.
+2. **Evaluate Classifiers:** Evaluate previously trained classifiers using the script `code/flows/predict_sentence.py`. The default configuration file is located at `code/configs/predict_sentence_cls.yaml` (note the typo correction).
+
+### Data
+
+The `data/sentence_classification` folder contains the following files:
+
+* **ME_sentence_tag_train.csv:** This file holds sentences tagged by two criminal law experts. Any disagreements between the experts were resolved through discussion.
+* **ME_sentence_tag_test.csv:** This file contains sentences tagged by two data science researchers receiving instructions directly from legal experts. Disagreements between researchers were resolved through joint discussion.
+* **statistics.md:** This file provides statistics regarding the datasets used within the project.
+* **scheme.md:** This file outlines the classification scheme collaboratively developed by criminal law experts and data science researchers.
+
+# Results
+The results are sorted in: `results/evaluations/sentence_calssification/04.06/average_metrics.txt`

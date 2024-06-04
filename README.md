@@ -14,7 +14,7 @@ This repository houses a project focused on classifying key aspects of criminal 
 The project offers two primary functionalities through scripts located within the `code/flows` directory:
 
 1. **Train Classifiers:** Train new classifiers using the script `code/flows/train_sentence.py`. The default configuration file is provided at `code/configs/train_sentence_cls.yaml`.
-2. **Evaluate Classifiers:** Evaluate previously trained classifiers using the script `code/flows/predict_sentence.py`. The default configuration file is located at `code/configs/predict_sentence_cls.yaml` (note the typo correction).
+2. **Evaluate Classifiers:** Evaluate previously trained classifiers using the script `code/flows/predict_sentence.py`. The default configuration file is located at `code/configs/train_sentence_cls.yaml`.
 
 ### Data
 

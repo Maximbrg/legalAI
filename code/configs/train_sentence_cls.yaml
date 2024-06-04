@@ -9,14 +9,13 @@ labels:            # What classifiers would we like to train
   # - CIR_BUYER_ID_WEP
   # - CIR_HELD_WAY_WEP
   # - CIR_MONEY_PAID_WEP
-  # - CIR_OBTAIN_WAY'
-  - CIR_PLANNING
-  - CIR_PURPOSE
-  - CIR_STATUS_WEP
-  - CIR_TYPE_WEP
-  - CIR_USE
-  - CONFESSION
-  - POSSESSION_WEP
+  - CIR_OBTAIN_WAY_WEP
+  # - CIR_PURPOSE
+  # - CIR_STATUS_WEP
+  # - CIR_TYPE_WEP
+  # - CIR_USE
+  # - CONFESSION
+  # - POSSESSION_WEP
 
 models_to_train:
   - setfit: true

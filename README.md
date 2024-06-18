@@ -1,11 +1,11 @@
 
-# Criminal Case Classification Project
+# Criminal Sentence Classification 
 
 This repository houses a project focused on classifying key aspects of criminal cases within the Israeli legal framework. The project leverages a few-shot learning approach for accurate sentence classification relevant to sentencing decisions.
 
 ### Key Features
 
-* **Code:** Implements a few-shot learning approach for accurate sentence classification.
+* **Code:** Implements a few-shot learning approach for sentence classification.
 * **Data:** Created in collaboration with Israeli Ministry of Justice criminal law experts, covering crucial aspects of criminal cases.
 * **Evaluation:** Includes an evaluation of the applied methodology for classifying sentences in weapon-related cases.
 
@@ -17,6 +17,7 @@ The project offers two primary functionalities through scripts located within th
 2. **Evaluate Classifiers:** Evaluate previously trained classifiers using the script `code/flows/predict_sentence.py`. The default configuration file is located at `code/configs/train_sentence_cls.yaml`.
 
 ### Data
+The sentences were extracted from verdicts received from the Nevo system (https://www.nevo.co.il/).
 
 The `data/sentence_classification` folder contains the following files:
 
@@ -27,3 +28,12 @@ The `data/sentence_classification` folder contains the following files:
 
 # Results
 The results are sorted in: `results/evaluations/sentence_calssification/04.06/average_metrics.txt`
+
+# Meta Information
+* Language: Hebrew
+* License Type: OpenRAIL
+* ResouceType: Coropra, Models and Tools
+* Model Sub Category: Pre-trained language models
+* Coropra Sub Category: Annotated Dataset
+* Task: Text Classification
+

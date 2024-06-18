@@ -1,7 +1,7 @@
 
 # Criminal Sentence Classification 
 
-This repository houses a project focused on classifying key aspects of criminal cases within the Israeli legal framework. The project leverages a few-shot learning approach for accurate sentence classification relevant to sentencing decisions.
+This project classifies key aspects of criminal cases within the Israeli legal framework. The project leverages a few-shot learning approach for accurate sentence classification relevant to sentencing decisions.
 
 ### Key Features
 

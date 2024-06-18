@@ -3,13 +3,13 @@ Train
 --
 |    Label            |   Count |
 |:--------------------|--------:|
-| reject              |    1345 |
-| GENERAL_CIRCUM      |     540 |
+| reject              |    1366 |
+| GENERAL_CIRCUM      |     546 |
 | CIR_TYPE_WEP        |     298 |
 | CONFESSION          |     169 |
 | CIR_BUYER_ID_WEP    |     142 |
 | CIR_HELD_WAY_WEP    |     139 |
-| PUNISHMENT          |     161 |
+| PUNISHMENT          |     168 |
 | CIR_PLANING             |     112 |
 | CIR_AMMU_AMOUNT_WEP |      92 |
 | CIR_PURPOSE_WEP             |      96 |

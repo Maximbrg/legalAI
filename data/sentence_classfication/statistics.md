@@ -9,8 +9,8 @@ Train
 | CONFESSION          |     169 |
 | CIR_BUYER_ID_WEP    |     142 |
 | CIR_HELD_WAY_WEP    |     139 |
-| PUNISHMENT          |     115 |
-| PLANING             |     111 |
+| PUNISHMENT          |     161 |
+| CIR_PLANING             |     112 |
 | CIR_AMMU_AMOUNT_WEP |      92 |
 | CIR_PURPOSE_WEP             |      96 |
 | CIR_MONEY_PAID_WEP  |      88 |
@@ -19,7 +19,7 @@ Train
 | CIR_OBTAIN_WAY_WEP  |      73 |
 | RESPO               |      55 |
 | CIR_USE             |      22 |
-|Total                | 3487    |
+|Total                | 3486    |
 
 Test
 --

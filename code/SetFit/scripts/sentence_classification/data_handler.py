@@ -8,8 +8,8 @@ pred_sentencing_path = os.path.abspath(os.path.join(current_dir, '..', '..','..'
 sys.path.insert(0, pred_sentencing_path)
 
 
-from utils.preprocessing_flows import *
-
+from src_old.old.preprocess.Preprocessing_flows import *
+from src_old.old.Utils.Loads import  extract_config_params
 
 def shuffle_array(arr):
     """
@@ -63,12 +63,20 @@ class data_handler:
         if single_df:
             self.dfs = {}
             if os.path.exists(data_path):
-                df = pd.read_csv(data_path)
+                if load_xlsx:
+                    df = pd.read_excel(data_path)
+                else:    
+                    df = pd.read_csv(data_path)
                 if 'Label' in df.columns:
                     one_hot_df = pd.get_dummies(df.Label)
                     one_hot_df.drop(columns=['Unnamed: 0'], inplace=True)
                     df = pd.concat([df, one_hot_df], axis=1)
 
+                df.rename(columns={
+                            'verdict': 'Case',
+                            'text': 'Text'
+                            }, inplace=True)
+                
                 for label in self.labels_:
                     label = label.replace("'", '')
                     data = {'text': df['Text'].values, 'label': df[label].values}
@@ -160,3 +168,31 @@ class data_handler:
             df_dict[label] = df
 
         return df_dict
+        df_dict = {}
+        for label in self.labels_:
+            df = self.shuffle(label)
+            df_dict[label] = df
+
+        return df_dict
+
+
+
+def run():
+
+    # seed, train_file_path, test_file_path, save_directory, verdict_path, num_samples_list, model_name_initial, \
+    # param, all_class, batch_size, num_iteration, num_epoch, labels_, pretrained_models = extract_config_params(config)
+
+    train_file_path = 'C:/Users/max_b/PycharmProjects/moj_sl/pred-sentencing/resources/data/new_data/train_test/second_lvl/test.csv'
+    labels_ = ['reject', 'CONFESSION', 'CIRCUM_OFFENSE', 'GENERAL_CIRCUM', 'PUNISHMENT']
+
+    handler = data_handler(data_path=train_file_path,
+                           positive_number=8,
+                           labels_=labels_,
+                           SEED=42)
+
+    df_dict = handler.create_dict_labels()
+
+
+
+if __name__ == '__main__':
+    run()

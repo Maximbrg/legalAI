@@ -22,14 +22,30 @@ The `data` directory includes the following subdirectories:
 
    - `train.csv` / `test.csv` / `eval.csv` – Predefined data splits of verdict sentences for training, testing, and evaluation.
    - `agreement.csv` – Contains statistics on inter-annotator agreement for the manual tagging process.
-   - 
+     
 2. `tagged_data_auto`
 This folder contains two subdirectories: `drugs` and `weapons`. Each of these directories includes:
    - `results_batch_LABEL_fewshot.csv` – A dataset of 10,000 sentences automatically tagged by ChatGPT, categorized by labels (`LABEL`).
 
 # Results
-The results are sorted in: `results/evaluations/sentence_calssification/04.06/average_metrics.txt`
+The result files are located in the `results` directory:
 
+- `drugs_setfit&gpt_experiments.csv`  
+  Contains evaluation results on `eval.csv` located at  
+  `data/tagged_data_manually/drugs/eval.csv`.
+
+- `verification_drugs_auto.csv`  
+  Contains results for a sample of sentences from  
+  `data/tagged_data_auto/drugs/results_batch_LABEL_fewshot.csv`.
+
+- `verification_weapon_auto.csv`  
+  Contains results for a sample of sentences from  
+  `data/tagged_data_auto/weapons/results_batch_LABEL_fewshot.csv`.
+
+- `wep_setfit&gpt_experiments.csv`  
+  Contains evaluation results on `eval.csv` located at  
+  `data/tagged_data_manually/weapons/eval.csv`.
+   
 # Meta Information
 * Language: Hebrew
 * License Type: OpenRAIL

@@ -23,6 +23,8 @@ Contains 3 YAML configuration files:
 #### b. `data/`  
 Includes training datasets in Pickle format.
 
+The files were created using the `scripts/sentence_classification/training_data_preparation.ipynb notebook`, based on data located in the `resources/data directory`.
+
 ### 3. `scripts/`
 Contains essential training scripts:
 - Data preparation
@@ -50,8 +52,9 @@ This module promotes modularity and reduces redundancy across pipeline stages.
 ### 🧪 Step-by-Step Execution
 
 1. **Prepare the Data**  
-   Open the Jupyter notebook:  
-   `scripts/sentence_classification/training_data_prepararion.ipynb`  
+   In this section, we create the Pickle files used for training, based on the data located in `resources/data directory`.
+
+   Open the Jupyter notebook: `Scripts/sentence_classification/training_data_prepararion.ipynb`.
    - Choose your domain (`drugs` or `weapon`).
    - Set a custom `experiment_name`.
    - Run the relevant cells to prepare the data.
